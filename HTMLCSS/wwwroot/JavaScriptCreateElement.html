@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CreateElement</title>
+</head>
+<body>
+    <ul id="colorlist">
+        <li>Red</li>
+        <li>Green</li>
+    </ul>
+    <script>
+        var colors = document.getElementById("colorlist");
+        var colorgreen = document.createElement("li");
+        colorgreen.textContent = "Blue";
+        colors.appendChild(colorgreen);
+    </script>
+</body>
+</html>
