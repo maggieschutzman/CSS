@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Tables</title>
+    <style>
+        table { border:3px red solid; }
+        tr { border:2px blue solid; }
+        td { border:1px green solid; }
+    </style>
+    <script>
+
+        function DoWork() {
+            console.log('you clicked the button');
+            var table = document.getElementById("mytable");
+            console.log(table);
+            console.log(table.rows.length);
+
+            Stuff(table);
+        }
+
+            function stuff(t) {
+            for (var i = 0; i < 10; i++) {
+                var newRow = table.insertRow();
+                var newCell = newRow.insertCell();
+                newCell.innerHTML = "This is new!";
+                newCell = newRow.insertCell();
+                newCell.innerHTML = "Double cool!";
+                }
+        }
+
+    </script>
+</head>
+<body>
+    <button id="DoWorkButton">Click Me!</button>
+
+    <table id="mytable">
+        <tr>
+            <td>Cute frightened kittens</td>
+            <td>Cool</td>
+
+        </tr>
+        <tr>
+            <td>Ugly puppies</td>
+            <td>Not cool</td>
+            
+        </tr>
+        <tr>
+            <td>Fish</td>
+        </tr>
+    </table="parts">
+
+</body>
+</html>
